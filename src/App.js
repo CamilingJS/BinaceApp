@@ -1,8 +1,6 @@
 import {useEffect, useState} from "react"
 import "./styles.css";
 
-const COINS = Object.keys(COIN_NAME)
-
 const COIN_NAME = {
   BTCUSDT: 'Bitcoin',
   ETHUSDT: 'Ethereum',
@@ -10,6 +8,7 @@ const COIN_NAME = {
   ADAUSDT: 'Cardano',
   DOGEUSDT: 'DogeCoin'
 }
+const COINS = Object.keys(COIN_NAME)
 
 export default function App() {
  
@@ -37,7 +36,7 @@ export default function App() {
           alt="logo"
           src="https://res.cloudinary.com/dxctpvd8v/image/upload/v1663731601/JayCam-Dev_Horizontal-White_hchcwc.svg"
         />
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Search" onClick={()=>{alert("This Search Component is underconstruction")}} />
       </nav>
       <div className="main-content">
         <h2>Today's cryptocurrency prices</h2>
@@ -56,7 +55,7 @@ export default function App() {
             coinData.map((coin, i)=> {
               return(
                 <tr key={coin.symbol} >
-                <td class="className" >{COIN_NAME[coin.symbol]}</td>
+                <td className="cryptoName" >{COIN_NAME[coin.symbol]}</td>
                 <td>{coin.symbol}</td>
                 <td>${ Number(coin.lastPrice).toLocaleString() }</td>
                 <td style={ Number(coin.priceChangePercent) > 0 

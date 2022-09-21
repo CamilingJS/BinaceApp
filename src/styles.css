@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  background: #5973f4;
+  background: teal;
   height: 50px;
   width: 100%;
   text-align: left;
@@ -65,6 +65,6 @@ th {
   height: 60px;
 }
 
-.className{
+.cryptoName{
   font-weight: bolder;
 }
