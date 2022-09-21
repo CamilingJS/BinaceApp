@@ -32,10 +32,6 @@ export default function App() {
   return (
     <div className="App">
       <nav>
-    
-
-        
-
         <a href="https://jaycam.dev/">
         <div className="logo" >
         <img
@@ -43,13 +39,10 @@ export default function App() {
           src="https://res.cloudinary.com/dxctpvd8v/image/upload/v1663731601/JayCam-Dev_Horizontal-White_hchcwc.svg"
         />
         </div>
-        
         </a>
-
-       
-        
         <input type="text" placeholder="Search" onClick={()=>{alert("This Search Component is underconstruction")}} />
       </nav>
+
       <div className="main-content">
         <h2>Today's cryptocurrency prices</h2>
         <table>
@@ -78,12 +71,10 @@ export default function App() {
               )
               
               })
-          }  
-          
-            
+          }
           </tbody>
-          
         </table>
+        
         <div className="bottom-logo-ctr">
           <a href="https://jaycam.dev/" >
           <img
