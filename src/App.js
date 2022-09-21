@@ -32,10 +32,22 @@ export default function App() {
   return (
     <div className="App">
       <nav>
+    
+
+        
+
+        <a href="https://jaycam.dev/">
+        <div className="logo" >
         <img
           alt="logo"
           src="https://res.cloudinary.com/dxctpvd8v/image/upload/v1663731601/JayCam-Dev_Horizontal-White_hchcwc.svg"
         />
+        </div>
+        
+        </a>
+
+       
+        
         <input type="text" placeholder="Search" onClick={()=>{alert("This Search Component is underconstruction")}} />
       </nav>
       <div className="main-content">
@@ -73,11 +85,14 @@ export default function App() {
           
         </table>
         <div className="bottom-logo-ctr">
+          <a href="https://jaycam.dev/" >
           <img
             className="bottom-logo"
             alt="logo"
             src="https://res.cloudinary.com/dxctpvd8v/image/upload/v1663731601/JayCam-Dev_Horizontal-White_hchcwc.svg"
           />
+          </a>
+          
         </div>
       </div>
     </div>
